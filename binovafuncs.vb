@@ -740,7 +740,7 @@ Public Function AnulaIngresoValor(atransaccion, xtipotragenerar, ID_Flag_Anulado
         Dim Calcontrol , CalipsoFunctions, xview , xtrdesimputacion, xingreso, xTrAnulacion , itemsxingreso , xObjeto 
         Dim rta 
         Dim xws 
-        xws = atransaccion.workspace
+        set xws = atransaccion.workspace
        
         set CalipsoFunctions = GetCalipsoFuncs(atransaccion)
 
